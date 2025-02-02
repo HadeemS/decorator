@@ -13,16 +13,16 @@ public class PasswordProgram {
         String phrase = reader.nextLine();
 
         Password password = new EasyPassword(phrase);
-        System.out.println("\nEasy Password: " + password.getPassword());
+        System.out.println("\nEasyPassword: " + password.getPassword());
 
-        password = new Pallindrome(password);
-        System.out.println("\nPallindrome Password: " + password.getPassword());
+        password = new Palindrome(password);
+        System.out.println("\nPalindrome Password: " + password.getPassword());
 
         password = new Symbols(password);
         System.out.println("\nReplacing Symbols: " + password.getPassword());
 
         password = new RandomCasing(password);
-        System.out.println("\nRandom Casing: " + password.getPassword());
+        System.out.println("\nRandomCasing: " + password.getPassword());
 
         password = new SpecialChars(password);
         System.out.println("\nAdding Special Characters: " + password.getPassword());
